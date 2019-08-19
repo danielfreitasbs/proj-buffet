@@ -38,7 +38,7 @@ FIM - ESTILO ELEMENTOS DA NAVBAR
 **/
 
 .contato{
-    height: 5vh;
+    height: 3vh;
     background-color: white;
     color:#E02D42;
     margin: 0 !important;
@@ -86,6 +86,7 @@ INICIO - ESTILO DO MENU CARDAPIO
 .menu-cardapio li:hover{
     background-color: #47070F;
     transition: ease .4s;
+    font-weight: bolder;
 }
 
 
@@ -93,7 +94,7 @@ INICIO - ESTILO DO MENU CARDAPIO
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     width: 100% !important;
     height: 100% !important;
 }
