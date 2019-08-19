@@ -1,0 +1,152 @@
+@import url("https://use.fontawesome.com/releases/v5.0.0/css/all.css");
+
+/**
+INICIO - ESTILO GERAL
+**/
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.titulos{
+    background-color: #E02D42;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+/**
+FIM - ESTILO GERAL
+**/
+
+/**
+INICIO - ESTILO ELEMENTOS DA NAVBAR
+**/
+.menu-element{
+    margin-top: 2px;
+    overflow-x: hidden;
+}
+
+.toggler-btn{
+    border: 0;
+}
+/**
+FIM - ESTILO ELEMENTOS DA NAVBAR
+**/
+
+.contato{
+    height: 5vh;
+    background-color: white;
+    color:#E02D42;
+    margin: 0 !important;
+    text-align: center;
+    content: 
+}
+
+.contato a{
+    text-decoration: none;
+    color: #E02D42;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .88rem;
+}
+
+.contato a::before{
+    content: '\f232';
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #009344;
+    margin-right: .5%;
+}
+
+.header{
+    background-color: gray;
+    height: 40vh;
+    width: 100vw;
+}
+
+/**
+INICIO - ESTILO DO MENU CARDAPIO
+**/
+.menu-cardapio{
+    text-align: center;
+    background-color: #E02D42;
+}
+
+.menu-cardapio li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 2vw;
+}
+
+.menu-cardapio li:hover{
+    background-color: #47070F;
+    transition: ease .4s;
+}
+
+
+.menu-cardapio a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    width: 100% !important;
+    height: 100% !important;
+}
+/**
+FIM - ESTILO DO MENU CARDAPIO
+**/
+
+/**
+INCIO - ESTILO DO CARDAPIO
+**/
+#cardapio-descricao{
+    margin-bottom: 2vh;
+}
+#cardapio-foto{
+    background-color: gray;
+    height: 100% important;
+}
+/**
+FIM - ESTILO DO CARDAPIO
+**/
+
+
+/**
+INICIO - ESTILO FORMULARIO INDEX
+**/
+.formulario input {
+    margin: 1.5% 0 1.5% 0 !important;
+}
+.formulario textarea {
+    margin: 1.5% 0 1.5% 0 !important;
+    resize: none;
+}
+
+.submit-btn{
+    text-align-last: center !important;
+}
+
+.formulario button{
+    width: 35%;
+    margin-bottom: 1vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E02D42;
+    color: white;
+    padding: 1.2% 0 1.2% 0 !important;
+}
+
+.formulario button:hover{
+    background-color: #009344;
+    color: white;
+    transition: ease-out .3s;
+}
+
+
+/**
+FIM - ESTILO FORMULARIO INDEX
+**/
