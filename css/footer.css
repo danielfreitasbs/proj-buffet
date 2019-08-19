@@ -1,0 +1,12 @@
+.footer{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #941E2C;
+    bottom: 0;
+    max-height: 30%;
+    color: white;
+}
+
+.row-footer{
+    margin: 0 !important;
+}
