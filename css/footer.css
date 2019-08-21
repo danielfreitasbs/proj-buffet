@@ -5,6 +5,7 @@
     bottom: 0;
     max-height: 30%;
     color: white;
+    position: fixed;
 }
 
 .row-footer{
