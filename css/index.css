@@ -5,13 +5,12 @@ INICIO - ESTILO GERAL
 **/
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 body{
     overflow-x: hidden;
     width: 100vw;
-    padding: 0;
-    margin: 0;
 }
 
 .titulos{
@@ -30,8 +29,7 @@ FIM - ESTILO GERAL
 INICIO - ESTILO ELEMENTOS DA NAVBAR
 **/
 .menu-element{
-    margin-top: 2px;
-    overflow-x: hidden;
+    margin-top: 8vh !important;
     width: 100vw !important;
 }
 
@@ -43,11 +41,13 @@ FIM - ESTILO ELEMENTOS DA NAVBAR
 **/
 
 .contato{
-    height: 5vh;
+    height: 8vh;
     background-color: white;
     color:#E02D42;
     margin: 0 !important;
     text-align: center;
+    padding: 2vh 0 0 0 !important;
+    width: 100vw;
 }
 
 .contato a{
@@ -55,6 +55,9 @@ FIM - ESTILO ELEMENTOS DA NAVBAR
     color: #E02D42;
     font-family: 'Montserrat', sans-serif;
     font-size: .88rem;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .contato a::before{
@@ -71,20 +74,27 @@ FIM - ESTILO ELEMENTOS DA NAVBAR
     background-color: gray;
     height: 40vh;
     width: 100vw;
+    overflow-x: hidden !important;
 }
 
 /**
 INICIO - ESTILO DO MENU CARDAPIO
 **/
+.menu-cardapio-container{
+    overflow-x: hidden !important;
+    width: 100vw;
+}
 .menu-cardapio{
     text-align: center;
     background-color: #E02D42;
+    width: 100vw;
 }
 
 .menu-cardapio li{
-    display: inline-block;
+    display: inline;
     list-style: none;
-    margin-right: 2vw;
+    height: 7vh;
+    padding: 2vh 0 0 0 !important;
 }
 
 .menu-cardapio li:hover{
@@ -99,9 +109,12 @@ INICIO - ESTILO DO MENU CARDAPIO
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    width: 100% !important;
-    height: 100% !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-bottom: 1px solid white;
 }
+
 /**
 FIM - ESTILO DO MENU CARDAPIO
 **/
