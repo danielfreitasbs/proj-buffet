@@ -21,6 +21,15 @@ body{
     font-weight: lighter;
     color: white;
 }
+
+.subtitulos{
+    background-color: #009420;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+}
 /**
 FIM - ESTILO GERAL
 **/
@@ -129,6 +138,12 @@ INCIO - ESTILO DO CARDAPIO
     background-color: gray;
     height: 100% important;
 }
+
+.lista-itens-cardapio{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
 /**
 FIM - ESTILO DO CARDAPIO
 **/
@@ -159,7 +174,7 @@ INICIO - ESTILO FORMULARIO INDEX
 }
 
 .formulario button:hover{
-    background-color: #009344;
+    background-color: #009420;
     color: white;
     transition: ease-out .3s;
 }

@@ -5,7 +5,7 @@ var itensCardapioQuatro = ["Item1", "Item2", "Item3", "Item4", "Item5"];
 var itensCardapioCinco = ["Item1", "Item2", "Item3", "Item4", "Item5"];
 
 function carregarCardapio(numeroCardapio){
-    let listElement = document.querySelector('ul.lista-cardapio');
+    let listElement = document.querySelector('ul.lista-itens-cardapio');
     let cardapio = [];
     listElement.innerHTML = '';
     
@@ -39,18 +39,25 @@ function carregarCardapio(numeroCardapio){
     
 }
 
+function setFadeTransition(){
+    let articleElement = document.querySelector('article.cardapio');
+    articleElement.classList.toggle("lista-itens-cardapio-fadeOut");
+    articleElement.classList.toggle("lista-itens-cardapio-fadeIn");
+}
+
 function adicionaTitulo(numeroCardapio){
     let mainElement = document.querySelector('main.main-element');
     mainElement.innerHTML = '';
     let articleElement = document.createElement('article');
+    articleElement.setAttribute('class', 'cardapio');
     let listaElemento = document.createElement('ul');
-    listaElemento.setAttribute('class','lista-cardapio');
+    listaElemento.setAttribute('class','lista-itens-cardapio');
     let tituloCardapio = '';
     let nomeCardapio = '';
     switch(numeroCardapio){
         case 1:
         tituloCardapio = document.createElement('h3');
-        tituloCardapio.setAttribute('id', 'titulo-cardapio');
+        tituloCardapio.setAttribute('class', 'subtitulos');
         nomeCardapio = document.createTextNode("Casamento");
         tituloCardapio.appendChild(nomeCardapio);
         mainElement.prepend(tituloCardapio);
@@ -60,7 +67,7 @@ function adicionaTitulo(numeroCardapio){
         break;
         case 2:
         tituloCardapio = document.createElement('h3');
-        tituloCardapio.setAttribute('id', 'titulo-cardapio');
+        tituloCardapio.setAttribute('class', 'subtitulos');
         nomeCardapio = document.createTextNode("Comidinha de Buteco");
         tituloCardapio.appendChild(nomeCardapio);
         mainElement.prepend(tituloCardapio);
@@ -69,7 +76,7 @@ function adicionaTitulo(numeroCardapio){
         break;
         case 3:
         tituloCardapio = document.createElement('h3');
-        tituloCardapio.setAttribute('id', 'titulo-cardapio');
+        tituloCardapio.setAttribute('class', 'subtitulos');
         nomeCardapio = document.createTextNode("Mais Pedido");
         tituloCardapio.appendChild(nomeCardapio);
         mainElement.prepend(tituloCardapio);
@@ -78,7 +85,7 @@ function adicionaTitulo(numeroCardapio){
         break;
         case 4:
         tituloCardapio = document.createElement('h3');
-        tituloCardapio.setAttribute('id', 'titulo-cardapio');
+        tituloCardapio.setAttribute('class', 'subtitulos');
         nomeCardapio = document.createTextNode("Churrasco");
         tituloCardapio.appendChild(nomeCardapio);
         mainElement.prepend(tituloCardapio);
@@ -87,7 +94,7 @@ function adicionaTitulo(numeroCardapio){
         break;
         case 5:
         tituloCardapio = document.createElement('h3');
-        tituloCardapio.setAttribute('id', 'titulo-cardapio');
+        tituloCardapio.setAttribute('class', 'subtitulos');
         nomeCardapio = document.createTextNode("Frios");
         tituloCardapio.appendChild(nomeCardapio);
         mainElement.prepend(tituloCardapio);
@@ -98,4 +105,5 @@ function adicionaTitulo(numeroCardapio){
         break;
     }
     carregarCardapio(numeroCardapio);
+    setFadeTransition();
 }
