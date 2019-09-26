@@ -1,4 +1,22 @@
-.comentarios{
-    background-color: blueviolet;
+*{
+    font-family: 'Montserrat', sans-serif
+}
+.main-content{
     min-height: 100vh;
+    min-width: 100vw;
+    /*padding-top: 5vh !important;*/
+}
+
+.categorias{
+    width: 100%;
+    background-color: #009344;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 640px){
+    .card{
+        width: 100vw;
+        height: 60vh;
+    }
 }
