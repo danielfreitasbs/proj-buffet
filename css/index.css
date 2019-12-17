@@ -20,6 +20,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     color: white;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
 }
 
 .subtitulos{
@@ -33,6 +36,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: white;
+    /* -webkit-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.5); */
 }
 /**
 FIM - ESTILO GERAL
@@ -61,6 +67,9 @@ FIM - ESTILO ELEMENTOS DA NAVBAR
     text-align: center;
     padding: 2vh 0 0 0 !important;
     width: 100vw;
+    -webkit-box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 6px -2px rgba(0,0,0,0.5);
 }
 
 .contato a{
@@ -96,7 +105,15 @@ INICIO - ESTILO DO MENU CARDAPIO
 .menu-cardapio-container{
     overflow-x: hidden !important;
     width: 100vw;
+    
 }
+
+.menu-cardapio-container ul{
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+}
+
 .menu-cardapio{
     text-align: center;
     background-color: #E02D42;
@@ -120,20 +137,20 @@ INICIO - ESTILO DO MENU CARDAPIO
 .menu-cardapio button{
     color: white;
     background-color: #E02D42;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
+    border: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     width: 100%;
     height: 100%;
     display: block;
-    border-bottom: 1px solid white;
 }
 
 .menu-cardapio button:hover{
-    background-color: #47070F;
-    transition: ease .4s;
+    background-color: #D4152F;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+    transition: ease .2s;
 }
 
 /**
@@ -174,6 +191,12 @@ INICIO - ESTILO FORMULARIO INDEX
 
 .submit-btn{
     text-align-last: center !important;
+}
+
+.submit-btn button{
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);
 }
 
 .formulario button{
